@@ -1,0 +1,21 @@
+{
+  "name": "mygo-interview-question",
+  "version": "1.0.0",
+  "description": "職位: WEB資深全端工程師",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/showking0122/mygo-interview-question.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/showking0122/mygo-interview-question/issues"
+  },
+  "homepage": "https://github.com/showking0122/mygo-interview-question#readme"
+}
