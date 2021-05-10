@@ -39,6 +39,8 @@ let outputValue = {
 };
 ```
 
+最終我寫了兩個版本，第一版是recursive，第二版是iterative。最終採用第二版
+
 ## (2) 請針對您回覆試題的部份，撰寫單元測試 (Unit Test)，測試涵蓋率 (Test Coverage) 大於 90 %
 
 預計使用`mocha`，搭配覆蓋率計算套件 [istanbuljs](https://github.com/istanbuljs/istanbuljs)
