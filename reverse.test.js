@@ -1,7 +1,6 @@
 const reverse = require("./reverse.js");
 
-test('All nested objects have exact one key', () => {
-
+test('I can reverse an object which contains nested exact-one-key objects and a primitive value in the end', () => {
     let exactOneKey = {
         hired: {
             be: {
@@ -23,6 +22,22 @@ test('All nested objects have exact one key', () => {
     };
     expect(reverse(exactOneKey)).toEqual(exactOneKeyReversed);
 
+
+    let hello = {
+        curtis: {
+            world: "hello"
+        }
+    };
+    let helloReversed = {
+        hello: {
+            world: "curtis"
+        }
+    }
+    expect(reverse(hello)).toEqual(helloReversed);
+
+});
+
+test('All nested objects should contain exact one key,', () => {
     expect(() => reverse({})).toThrow('There should be only one key in an object.');
     expect(() => reverse({ key1: {} })).toThrow('There should be only one key in an object.');
     expect(() => reverse({ key1: {}, key2: {} })).toThrow('There should be only one key in an object.');
