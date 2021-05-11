@@ -3,35 +3,35 @@ Version 1
 Reverse an object recursively
 */
 
-function v1(input) {
-    let [head] = reverseRecursively(input, 0);
-    return head;
-}
+// function v1(input) {
+//     let [head] = reverseRecursively(input, 0);
+//     return head;
+// }
 
-function reverseRecursively(input, level) {
-    // hit the ground
-    if (typeof input !== 'object') {
-        let obj = {}
-        let head = obj;
-        return [head, input, obj];
-    }
+// function reverseRecursively(input, level) {
+//     // hit the ground
+//     if (typeof input !== 'object') {
+//         let obj = {}
+//         let head = obj;
+//         return [head, input, obj];
+//     }
 
-    let key = Object.keys(input)[0];
-    let value = input[key];
+//     let key = Object.keys(input)[0];
+//     let value = input[key];
 
-    let [head, preKey, tail] = reverseRecursively(value, level + 1);
+//     let [head, preKey, tail] = reverseRecursively(value, level + 1);
 
-    // compose the result at higher recursive level
-    if (level > 0) {
-        let newTail = {};
-        tail[preKey] = newTail;
-        return [head, key, newTail];
-    } else {
-        tail[preKey] = key;
-        return [head];
-    }
+//     // compose the result at higher recursive level
+//     if (level > 0) {
+//         let newTail = {};
+//         tail[preKey] = newTail;
+//         return [head, key, newTail];
+//     } else {
+//         tail[preKey] = key;
+//         return [head];
+//     }
 
-}
+// }
 
 
 /* 
@@ -71,7 +71,7 @@ function v2(input) {
 
 const reverse = (input) => {
     if (typeof input !== 'object' || Array.isArray(input))
-        throw 'Assume the input is an object.';
+        throw 'Input should be an object.';
 
     return v2(input);
 
