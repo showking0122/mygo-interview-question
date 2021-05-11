@@ -1,5 +1,10 @@
-# mygo 面試題
+[toc]
 
+[[_TOC_]]
+
+---
+
+# mygo 面試題
 職位: WEB資深全端工程師
 
 ## (1) Node.js 試題
@@ -45,3 +50,7 @@ let outputValue = {
 
 預計使用`mocha`，搭配覆蓋率計算套件 [istanbuljs](https://github.com/istanbuljs/istanbuljs)
 
+# 展示方式
+- `npm start`: 執行程式
+- `npm test`: 執行單元測試
+- `npm run coverage`: 顯示測試覆蓋率
