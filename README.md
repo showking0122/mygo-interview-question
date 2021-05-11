@@ -48,7 +48,7 @@ let outputValue = {
 
 ## (2) 請針對您回覆試題的部份，撰寫單元測試 (Unit Test)，測試涵蓋率 (Test Coverage) 大於 90 %
 
-預計使用`mocha`，搭配覆蓋率計算套件 [istanbuljs](https://github.com/istanbuljs/istanbuljs)
+預計使用`jest`
 
 # 展示方式
 - `npm start`: 執行程式
